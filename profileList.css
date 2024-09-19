@@ -1,0 +1,177 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #e6d392;
+  }
+  
+  header {
+    background-color: #3b7d23;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+  }
+  
+  .logo {
+    flex: 1;
+  }
+  
+  .logo img {
+    width: 200px; /* Adjust logo size as needed */
+    height: auto;
+  }
+  
+  .nav__links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    flex: 2;
+    justify-content: center;
+  }
+  
+  .nav__links li {
+    margin-right: 20px;
+  }
+  
+  .nav__links li a {
+    text-decoration: none;
+    color: green;
+    font-size: 18px;
+    transition: color 0.3s ease;
+  }
+  
+  .nav__links li a:hover {
+    color: #cce7b2; /* Lighter color on hover */
+  }
+  
+  .search-bar-container {
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  .search-bar-container input {
+    padding: 12px;
+    width: 90%;
+    max-width: 700px; /* Increase max-width for larger screens */
+    border-radius: 25px;
+    border: 1px solid #ccc;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .search-bar-container input:focus {
+    border-color: #3b7d23;
+    box-shadow: 0 0 5px rgba(59, 125, 35, 0.3);
+  }
+  
+  .profile-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .profile-card {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    width: 30%; /* Make the card size smaller */
+    padding: 20px;
+    margin-bottom: 20px;
+    position: relative;
+    box-sizing: border-box;
+    transition: transform 0.2s; /* Add a smooth hover effect */
+  }
+  
+  .profile-card:hover {
+    transform: translateY(-5px); /* Lift up on hover */
+  }
+  
+  .profile-header {
+    display: flex;
+    align-items: center;
+  }
+  
+  .profile-image img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+  }
+  
+  .farmer-info h2 {
+    margin: 0;
+  }
+  
+  .farmer-info p {
+    margin: 0;
+    font-size: 18px;
+    color: #777;
+  }
+  
+  .star {
+    color: #ffc107;
+    font-size: 20px;
+  }
+  
+  .profile-details p {
+    margin: 10px 0;
+    font-size: 16px;
+  }
+  
+  .deals-done {
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+    padding: 5px 10px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    font-size: 14px;
+  }
+  
+  .major-products h3 {
+    margin-top: 20px;
+    font-size: 18px;
+  }
+  
+  .products button {
+    background-color: #f0f0f0;
+    border: none;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  .contact-btn {
+    margin-top: 20px;
+    text-align: right;
+  }
+  
+  .contact-btn button {
+    background-color: #3b7d23;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  @media (max-width: 992px) {
+    .profile-card {
+      width: 45%; /* Adjust width for medium screens */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .profile-card {
+      width: 100%; /* Full width for smaller screens */
+      max-width: 500px; /* Max width for smaller screens */
+    }
+  }

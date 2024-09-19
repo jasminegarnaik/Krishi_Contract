@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Farmer Profiles</title>
+    <link rel="stylesheet" href="profileList.css" />
+  </head>
+  <body>
+    <div class="nav__bar">
+      <div class="logo">
+        <a href="#"><img src="assets/logo1.png" alt="logo" /></a>
+      </div>
+      <div class="nav_menu_btn" id="menu-btn">
+        <i class="ri-menu-line"></i>
+      </div>
+    </div>
+    <ul class="nav__links" id="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="Contract.html">Contracts</a></li>
+      <li><a href="#service">Market Trends</a></li>
+      <li><a href="#explore">Krishi Gyaan</a></li>
+    </ul>
+
+    <!-- Search Bar -->
+    <div class="search-bar-container">
+      <input
+        type="text"
+        id="searchBar"
+        placeholder="Search profiles..."
+        onkeyup="filterProfiles()"
+      />
+    </div>
+    <div
+      id="noResultsMessage"
+      style="
+        display: none;
+        text-align: center;
+        font-size: 18px;
+        color: red;
+        margin-top: 20px;
+      "
+    >
+      Sorry, the ingredient is not available.
+    </div>
+
+    <!-- Profile Cards Container -->
+    <section class="profile-cards-container">
+      <!-- Profile Card 1 -->
+      <div class="profile-card" data-products="Potato Sugarcane Cotton Wheat">
+        <div class="profile-header">
+          <div class="profile-image">
+            <img src="default-profile.png" alt="Farmer Profile" />
+          </div>
+          <div class="farmer-info">
+            <h2>Farmer Name</h2>
+            <p>4.2 <span class="star">★</span></p>
+          </div>
+        </div>
+        <div class="profile-details">
+          <p>Farmer ID: 227100485</p>
+          <p>Phone No.: 9341848793</p>
+          <p>State: Odisha</p>
+          <p>City: Bhubaneswar</p>
+          <p>Address: OUTR, Ghatikia 751023</p>
+        </div>
+        <div class="deals-done">
+          <span>Deals Done: 18</span>
+        </div>
+        <div class="major-products">
+          <h3>Major Products</h3>
+          <div class="products">
+            <button>Potato</button>
+            <button>Sugarcane</button>
+            <button>Cotton</button>
+            <button>Wheat</button>
+          </div>
+        </div>
+        <div class="contact-btn">
+          <button>Contact</button>
+        </div>
+      </div>
+
+      <!-- Profile Card 2 -->
+      <div class="profile-card" data-products="Rice Wheat Maize">
+        <div class="profile-header">
+          <div class="profile-image">
+            <img src="default-profile.png" alt="Farmer Profile" />
+          </div>
+          <div class="farmer-info">
+            <h2>Another Farmer</h2>
+            <p>4.5 <span class="star">★</span></p>
+          </div>
+        </div>
+        <div class="profile-details">
+          <p>Farmer ID: 227100486</p>
+          <p>Phone No.: 1234567890</p>
+          <p>State: Maharashtra</p>
+          <p>City: Pune</p>
+          <p>Address: XYZ, Pune 411014</p>
+        </div>
+        <div class="deals-done">
+          <span>Deals Done: 25</span>
+        </div>
+        <div class="major-products">
+          <h3>Major Products</h3>
+          <div class="products">
+            <button>Rice</button>
+            <button>Wheat</button>
+            <button>Maize</button>
+          </div>
+        </div>
+        <div class="contact-btn">
+          <button>Contact</button>
+        </div>
+      </div>
+      <div class="profile-card" data-products="Potato Sugarcane Cotton Wheat">
+        <div class="profile-header">
+          <div class="profile-image">
+            <img src="default-profile.png" alt="Farmer Profile" />
+          </div>
+          <div class="farmer-info">
+            <h2>Farmer Name</h2>
+            <p>4.2 <span class="star">★</span></p>
+          </div>
+        </div>
+        <div class="profile-details">
+          <p>Farmer ID: 227100485</p>
+          <p>Phone No.: 9341848793</p>
+          <p>State: Odisha</p>
+          <p>City: Bhubaneswar</p>
+          <p>Address: OUTR, Ghatikia 751023</p>
+        </div>
+        <div class="deals-done">
+          <span>Deals Done: 18</span>
+        </div>
+        <div class="major-products">
+          <h3>Major Products</h3>
+          <div class="products">
+            <button>Potato</button>
+            <button>Sugarcane</button>
+            <button>Cotton</button>
+            <button>Wheat</button>
+          </div>
+        </div>
+        <div class="contact-btn">
+          <button>Contact</button>
+        </div>
+      </div>
+      <div class="profile-card" data-products="Potato Sugarcane Cotton Wheat">
+        <div class="profile-header">
+          <div class="profile-image">
+            <img src="default-profile.png" alt="Farmer Profile" />
+          </div>
+          <div class="farmer-info">
+            <h2>Farmer Name</h2>
+            <p>4.2 <span class="star">★</span></p>
+          </div>
+        </div>
+        <div class="profile-details">
+          <p>Farmer ID: 227100485</p>
+          <p>Phone No.: 9341848793</p>
+          <p>State: Odisha</p>
+          <p>City: Bhubaneswar</p>
+          <p>Address: OUTR, Ghatikia 751023</p>
+        </div>
+        <div class="deals-done">
+          <span>Deals Done: 18</span>
+        </div>
+        <div class="major-products">
+          <h3>Major Products</h3>
+          <div class="products">
+            <button>Potato</button>
+            <button>Sugarcane</button>
+            <button>Cotton</button>
+            <button>Wheat</button>
+          </div>
+        </div>
+        <div class="contact-btn">
+          <button>Contact</button>
+        </div>
+      </div>
+      <div class="profile-card" data-products="Potato Sugarcane Cotton Wheat">
+        <div class="profile-header">
+          <div class="profile-image">
+            <img src="default-profile.png" alt="Farmer Profile" />
+          </div>
+          <div class="farmer-info">
+            <h2>Farmer Name</h2>
+            <p>4.2 <span class="star">★</span></p>
+          </div>
+        </div>
+        <div class="profile-details">
+          <p>Farmer ID: 227100485</p>
+          <p>Phone No.: 9341848793</p>
+          <p>State: Odisha</p>
+          <p>City: Bhubaneswar</p>
+          <p>Address: OUTR, Ghatikia 751023</p>
+        </div>
+        <div class="deals-done">
+          <span>Deals Done: 18</span>
+        </div>
+        <div class="major-products">
+          <h3>Major Products</h3>
+          <div class="products">
+            <button>Potato</button>
+            <button>Sugarcane</button>
+            <button>Cotton</button>
+            <button>Wheat</button>
+          </div>
+        </div>
+        <div class="contact-btn">
+          <button>Contact</button>
+        </div>
+      </div>
+
+      <!-- Add more profile cards as needed -->
+    </section>
+
+    <!-- JavaScript to filter profiles -->
+    <script>
+      function filterProfiles() {
+        const searchInput = document
+          .getElementById("searchBar") // Correct ID
+          .value.toLowerCase();
+        const profileCards = document.querySelectorAll(".profile-card");
+        let hasResults = false; // Flag to check if any result is found
+
+        profileCards.forEach((card) => {
+          // Check if card contains the searched product
+          const products = card.getAttribute("data-products").toLowerCase();
+          if (products.includes(searchInput)) {
+            card.style.display = ""; // Show card if match is found
+            hasResults = true; // Set flag to true if a match is found
+          } else {
+            card.style.display = "none"; // Hide card if no match is found
+          }
+        });
+
+        // Display the "no results" message if no match is found
+        document.getElementById("noResultsMessage").style.display = hasResults
+          ? "none"
+          : "block";
+      }
+    </script>
+  </body>
+</html>
